@@ -1,0 +1,228 @@
+[0.215s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.215s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x74a7486d83a0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x74a7487e1840>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x74a7487e1840>>)
+[0.493s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.493s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.493s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.493s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.493s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.493s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.493s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ubuntu/robocon/catchrobo_test/ros2_ws'
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.501s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.501s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.501s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.501s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.501s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.501s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.501s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.501s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(src/2dyna2con) by extensions ['ignore', 'ignore_ament_install']
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(src/2dyna2con) by extension 'ignore'
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(src/2dyna2con) by extension 'ignore_ament_install'
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(src/2dyna2con) by extensions ['colcon_pkg']
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(src/2dyna2con) by extension 'colcon_pkg'
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(src/2dyna2con) by extensions ['colcon_meta']
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(src/2dyna2con) by extension 'colcon_meta'
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(src/2dyna2con) by extensions ['ros']
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/2dyna2con) by extension 'ros'
+[0.505s] DEBUG:colcon.colcon_core.package_identification:Package 'src/2dyna2con' with type 'ros.ament_python' and name '2dyna2con'
+[0.506s] Level 1:colcon.colcon_core.package_identification:_identify(src/catchrobo_joy_test) by extensions ['ignore', 'ignore_ament_install']
+[0.506s] Level 1:colcon.colcon_core.package_identification:_identify(src/catchrobo_joy_test) by extension 'ignore'
+[0.506s] Level 1:colcon.colcon_core.package_identification:_identify(src/catchrobo_joy_test) by extension 'ignore_ament_install'
+[0.506s] Level 1:colcon.colcon_core.package_identification:_identify(src/catchrobo_joy_test) by extensions ['colcon_pkg']
+[0.506s] Level 1:colcon.colcon_core.package_identification:_identify(src/catchrobo_joy_test) by extension 'colcon_pkg'
+[0.506s] Level 1:colcon.colcon_core.package_identification:_identify(src/catchrobo_joy_test) by extensions ['colcon_meta']
+[0.506s] Level 1:colcon.colcon_core.package_identification:_identify(src/catchrobo_joy_test) by extension 'colcon_meta'
+[0.506s] Level 1:colcon.colcon_core.package_identification:_identify(src/catchrobo_joy_test) by extensions ['ros']
+[0.506s] Level 1:colcon.colcon_core.package_identification:_identify(src/catchrobo_joy_test) by extension 'ros'
+[0.507s] DEBUG:colcon.colcon_core.package_identification:Package 'src/catchrobo_joy_test' with type 'ros.ament_python' and name 'catchrobo_joy_test'
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/catchrobo_single_dxl_test) by extensions ['ignore', 'ignore_ament_install']
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/catchrobo_single_dxl_test) by extension 'ignore'
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/catchrobo_single_dxl_test) by extension 'ignore_ament_install'
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/catchrobo_single_dxl_test) by extensions ['colcon_pkg']
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/catchrobo_single_dxl_test) by extension 'colcon_pkg'
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/catchrobo_single_dxl_test) by extensions ['colcon_meta']
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/catchrobo_single_dxl_test) by extension 'colcon_meta'
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/catchrobo_single_dxl_test) by extensions ['ros']
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/catchrobo_single_dxl_test) by extension 'ros'
+[0.508s] DEBUG:colcon.colcon_core.package_identification:Package 'src/catchrobo_single_dxl_test' with type 'ros.ament_python' and name 'catchrobo_single_dxl_test'
+[0.508s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.508s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.508s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.508s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.508s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.534s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.534s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.537s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/ubuntu/robocon_study/ros2/hello_world_ws/install
+[0.538s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 383 installed packages in /opt/ros/humble
+[0.545s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.583s] Level 5:colcon.colcon_core.verb:set package '2dyna2con' build argument 'cmake_args' from command line to 'None'
+[0.583s] Level 5:colcon.colcon_core.verb:set package '2dyna2con' build argument 'cmake_target' from command line to 'None'
+[0.583s] Level 5:colcon.colcon_core.verb:set package '2dyna2con' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.583s] Level 5:colcon.colcon_core.verb:set package '2dyna2con' build argument 'cmake_clean_cache' from command line to 'False'
+[0.583s] Level 5:colcon.colcon_core.verb:set package '2dyna2con' build argument 'cmake_clean_first' from command line to 'False'
+[0.583s] Level 5:colcon.colcon_core.verb:set package '2dyna2con' build argument 'cmake_force_configure' from command line to 'False'
+[0.583s] Level 5:colcon.colcon_core.verb:set package '2dyna2con' build argument 'ament_cmake_args' from command line to 'None'
+[0.583s] Level 5:colcon.colcon_core.verb:set package '2dyna2con' build argument 'catkin_cmake_args' from command line to 'None'
+[0.583s] Level 5:colcon.colcon_core.verb:set package '2dyna2con' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.583s] DEBUG:colcon.colcon_core.verb:Building package '2dyna2con' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/robocon/catchrobo_test/ros2_ws/build/2dyna2con', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/2dyna2con', 'merge_install': False, 'path': '/home/ubuntu/robocon/catchrobo_test/ros2_ws/src/2dyna2con', 'symlink_install': False, 'test_result_base': None}
+[0.583s] Level 5:colcon.colcon_core.verb:set package 'catchrobo_joy_test' build argument 'cmake_args' from command line to 'None'
+[0.584s] Level 5:colcon.colcon_core.verb:set package 'catchrobo_joy_test' build argument 'cmake_target' from command line to 'None'
+[0.584s] Level 5:colcon.colcon_core.verb:set package 'catchrobo_joy_test' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.584s] Level 5:colcon.colcon_core.verb:set package 'catchrobo_joy_test' build argument 'cmake_clean_cache' from command line to 'False'
+[0.584s] Level 5:colcon.colcon_core.verb:set package 'catchrobo_joy_test' build argument 'cmake_clean_first' from command line to 'False'
+[0.584s] Level 5:colcon.colcon_core.verb:set package 'catchrobo_joy_test' build argument 'cmake_force_configure' from command line to 'False'
+[0.584s] Level 5:colcon.colcon_core.verb:set package 'catchrobo_joy_test' build argument 'ament_cmake_args' from command line to 'None'
+[0.584s] Level 5:colcon.colcon_core.verb:set package 'catchrobo_joy_test' build argument 'catkin_cmake_args' from command line to 'None'
+[0.584s] Level 5:colcon.colcon_core.verb:set package 'catchrobo_joy_test' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.584s] DEBUG:colcon.colcon_core.verb:Building package 'catchrobo_joy_test' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/robocon/catchrobo_test/ros2_ws/build/catchrobo_joy_test', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/catchrobo_joy_test', 'merge_install': False, 'path': '/home/ubuntu/robocon/catchrobo_test/ros2_ws/src/catchrobo_joy_test', 'symlink_install': False, 'test_result_base': None}
+[0.584s] Level 5:colcon.colcon_core.verb:set package 'catchrobo_single_dxl_test' build argument 'cmake_args' from command line to 'None'
+[0.584s] Level 5:colcon.colcon_core.verb:set package 'catchrobo_single_dxl_test' build argument 'cmake_target' from command line to 'None'
+[0.584s] Level 5:colcon.colcon_core.verb:set package 'catchrobo_single_dxl_test' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.584s] Level 5:colcon.colcon_core.verb:set package 'catchrobo_single_dxl_test' build argument 'cmake_clean_cache' from command line to 'False'
+[0.584s] Level 5:colcon.colcon_core.verb:set package 'catchrobo_single_dxl_test' build argument 'cmake_clean_first' from command line to 'False'
+[0.584s] Level 5:colcon.colcon_core.verb:set package 'catchrobo_single_dxl_test' build argument 'cmake_force_configure' from command line to 'False'
+[0.584s] Level 5:colcon.colcon_core.verb:set package 'catchrobo_single_dxl_test' build argument 'ament_cmake_args' from command line to 'None'
+[0.584s] Level 5:colcon.colcon_core.verb:set package 'catchrobo_single_dxl_test' build argument 'catkin_cmake_args' from command line to 'None'
+[0.584s] Level 5:colcon.colcon_core.verb:set package 'catchrobo_single_dxl_test' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.584s] DEBUG:colcon.colcon_core.verb:Building package 'catchrobo_single_dxl_test' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/robocon/catchrobo_test/ros2_ws/build/catchrobo_single_dxl_test', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/catchrobo_single_dxl_test', 'merge_install': False, 'path': '/home/ubuntu/robocon/catchrobo_test/ros2_ws/src/catchrobo_single_dxl_test', 'symlink_install': False, 'test_result_base': None}
+[0.584s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.585s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.585s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ubuntu/robocon/catchrobo_test/ros2_ws/src/2dyna2con' with build type 'ament_python'
+[0.585s] Level 1:colcon.colcon_core.shell:create_environment_hook('2dyna2con', 'ament_prefix_path')
+[0.590s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.590s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/2dyna2con/share/2dyna2con/hook/ament_prefix_path.ps1'
+[0.592s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/2dyna2con/share/2dyna2con/hook/ament_prefix_path.dsv'
+[0.592s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/2dyna2con/share/2dyna2con/hook/ament_prefix_path.sh'
+[0.593s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.593s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.596s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ubuntu/robocon/catchrobo_test/ros2_ws/src/catchrobo_joy_test' with build type 'ament_python'
+[0.596s] Level 1:colcon.colcon_core.shell:create_environment_hook('catchrobo_joy_test', 'ament_prefix_path')
+[0.596s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/catchrobo_joy_test/share/catchrobo_joy_test/hook/ament_prefix_path.ps1'
+[0.596s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/catchrobo_joy_test/share/catchrobo_joy_test/hook/ament_prefix_path.dsv'
+[0.597s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/catchrobo_joy_test/share/catchrobo_joy_test/hook/ament_prefix_path.sh'
+[0.597s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.597s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.600s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ubuntu/robocon/catchrobo_test/ros2_ws/src/catchrobo_single_dxl_test' with build type 'ament_python'
+[0.600s] Level 1:colcon.colcon_core.shell:create_environment_hook('catchrobo_single_dxl_test', 'ament_prefix_path')
+[0.600s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/catchrobo_single_dxl_test/share/catchrobo_single_dxl_test/hook/ament_prefix_path.ps1'
+[0.601s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/catchrobo_single_dxl_test/share/catchrobo_single_dxl_test/hook/ament_prefix_path.dsv'
+[0.601s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/catchrobo_single_dxl_test/share/catchrobo_single_dxl_test/hook/ament_prefix_path.sh'
+[0.602s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.602s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.737s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ubuntu/robocon/catchrobo_test/ros2_ws/src/2dyna2con'
+[0.738s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.738s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.866s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ubuntu/robocon/catchrobo_test/ros2_ws/src/catchrobo_joy_test'
+[0.866s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.866s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.993s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ubuntu/robocon/catchrobo_test/ros2_ws/src/catchrobo_single_dxl_test'
+[0.993s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.993s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.271s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/robocon/catchrobo_test/ros2_ws/src/catchrobo_single_dxl_test': PYTHONPATH=/home/ubuntu/robocon/catchrobo_test/ros2_ws/build/catchrobo_single_dxl_test/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/catchrobo_single_dxl_test/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/catchrobo_single_dxl_test build --build-base /home/ubuntu/robocon/catchrobo_test/ros2_ws/build/catchrobo_single_dxl_test/build install --record /home/ubuntu/robocon/catchrobo_test/ros2_ws/build/catchrobo_single_dxl_test/install.log --single-version-externally-managed install_data
+[1.271s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/robocon/catchrobo_test/ros2_ws/src/catchrobo_joy_test': PYTHONPATH=/home/ubuntu/robocon/catchrobo_test/ros2_ws/build/catchrobo_joy_test/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/catchrobo_joy_test/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/catchrobo_joy_test build --build-base /home/ubuntu/robocon/catchrobo_test/ros2_ws/build/catchrobo_joy_test/build install --record /home/ubuntu/robocon/catchrobo_test/ros2_ws/build/catchrobo_joy_test/install.log --single-version-externally-managed install_data
+[1.272s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/robocon/catchrobo_test/ros2_ws/src/2dyna2con': PYTHONPATH=/home/ubuntu/robocon/catchrobo_test/ros2_ws/build/2dyna2con/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/2dyna2con/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/2dyna2con build --build-base /home/ubuntu/robocon/catchrobo_test/ros2_ws/build/2dyna2con/build install --record /home/ubuntu/robocon/catchrobo_test/ros2_ws/build/2dyna2con/install.log --single-version-externally-managed install_data
+[1.430s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/robocon/catchrobo_test/ros2_ws/src/catchrobo_single_dxl_test' returned '0': PYTHONPATH=/home/ubuntu/robocon/catchrobo_test/ros2_ws/build/catchrobo_single_dxl_test/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/catchrobo_single_dxl_test/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/catchrobo_single_dxl_test build --build-base /home/ubuntu/robocon/catchrobo_test/ros2_ws/build/catchrobo_single_dxl_test/build install --record /home/ubuntu/robocon/catchrobo_test/ros2_ws/build/catchrobo_single_dxl_test/install.log --single-version-externally-managed install_data
+[1.436s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/catchrobo_single_dxl_test' for CMake module files
+[1.437s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/catchrobo_single_dxl_test' for CMake config files
+[1.439s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/catchrobo_single_dxl_test/lib'
+[1.439s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/catchrobo_single_dxl_test/bin'
+[1.439s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/catchrobo_single_dxl_test/lib/pkgconfig/catchrobo_single_dxl_test.pc'
+[1.439s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/catchrobo_single_dxl_test/lib/python3.10/site-packages'
+[1.439s] Level 1:colcon.colcon_core.shell:create_environment_hook('catchrobo_single_dxl_test', 'pythonpath')
+[1.439s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/catchrobo_single_dxl_test/share/catchrobo_single_dxl_test/hook/pythonpath.ps1'
+[1.440s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/catchrobo_single_dxl_test/share/catchrobo_single_dxl_test/hook/pythonpath.dsv'
+[1.440s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/catchrobo_single_dxl_test/share/catchrobo_single_dxl_test/hook/pythonpath.sh'
+[1.440s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/catchrobo_single_dxl_test/bin'
+[1.440s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(catchrobo_single_dxl_test)
+[1.440s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/catchrobo_single_dxl_test/share/catchrobo_single_dxl_test/package.ps1'
+[1.441s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/catchrobo_single_dxl_test/share/catchrobo_single_dxl_test/package.dsv'
+[1.442s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/catchrobo_single_dxl_test/share/catchrobo_single_dxl_test/package.sh'
+[1.443s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/catchrobo_single_dxl_test/share/catchrobo_single_dxl_test/package.bash'
+[1.444s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/catchrobo_single_dxl_test/share/catchrobo_single_dxl_test/package.zsh'
+[1.444s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/catchrobo_single_dxl_test/share/colcon-core/packages/catchrobo_single_dxl_test)
+[1.445s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/2dyna2con' for CMake module files
+[1.445s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/robocon/catchrobo_test/ros2_ws/src/2dyna2con' returned '0': PYTHONPATH=/home/ubuntu/robocon/catchrobo_test/ros2_ws/build/2dyna2con/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/2dyna2con/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/2dyna2con build --build-base /home/ubuntu/robocon/catchrobo_test/ros2_ws/build/2dyna2con/build install --record /home/ubuntu/robocon/catchrobo_test/ros2_ws/build/2dyna2con/install.log --single-version-externally-managed install_data
+[1.446s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/2dyna2con' for CMake config files
+[1.446s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/2dyna2con/lib'
+[1.446s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/2dyna2con/bin'
+[1.446s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/2dyna2con/lib/pkgconfig/2dyna2con.pc'
+[1.446s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/2dyna2con/lib/python3.10/site-packages'
+[1.446s] Level 1:colcon.colcon_core.shell:create_environment_hook('2dyna2con', 'pythonpath')
+[1.447s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/2dyna2con/share/2dyna2con/hook/pythonpath.ps1'
+[1.447s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/2dyna2con/share/2dyna2con/hook/pythonpath.dsv'
+[1.447s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/2dyna2con/share/2dyna2con/hook/pythonpath.sh'
+[1.448s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/2dyna2con/bin'
+[1.448s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(2dyna2con)
+[1.448s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/2dyna2con/share/2dyna2con/package.ps1'
+[1.448s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/2dyna2con/share/2dyna2con/package.dsv'
+[1.449s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/2dyna2con/share/2dyna2con/package.sh'
+[1.449s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/2dyna2con/share/2dyna2con/package.bash'
+[1.449s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/2dyna2con/share/2dyna2con/package.zsh'
+[1.449s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/2dyna2con/share/colcon-core/packages/2dyna2con)
+[1.450s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/catchrobo_joy_test' for CMake module files
+[1.451s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/robocon/catchrobo_test/ros2_ws/src/catchrobo_joy_test' returned '0': PYTHONPATH=/home/ubuntu/robocon/catchrobo_test/ros2_ws/build/catchrobo_joy_test/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/catchrobo_joy_test/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/catchrobo_joy_test build --build-base /home/ubuntu/robocon/catchrobo_test/ros2_ws/build/catchrobo_joy_test/build install --record /home/ubuntu/robocon/catchrobo_test/ros2_ws/build/catchrobo_joy_test/install.log --single-version-externally-managed install_data
+[1.451s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/catchrobo_joy_test' for CMake config files
+[1.453s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/catchrobo_joy_test/lib'
+[1.453s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/catchrobo_joy_test/bin'
+[1.453s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/catchrobo_joy_test/lib/pkgconfig/catchrobo_joy_test.pc'
+[1.453s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/catchrobo_joy_test/lib/python3.10/site-packages'
+[1.453s] Level 1:colcon.colcon_core.shell:create_environment_hook('catchrobo_joy_test', 'pythonpath')
+[1.453s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/catchrobo_joy_test/share/catchrobo_joy_test/hook/pythonpath.ps1'
+[1.453s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/catchrobo_joy_test/share/catchrobo_joy_test/hook/pythonpath.dsv'
+[1.454s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/catchrobo_joy_test/share/catchrobo_joy_test/hook/pythonpath.sh'
+[1.454s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/catchrobo_joy_test/bin'
+[1.454s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(catchrobo_joy_test)
+[1.454s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/catchrobo_joy_test/share/catchrobo_joy_test/package.ps1'
+[1.455s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/catchrobo_joy_test/share/catchrobo_joy_test/package.dsv'
+[1.455s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/catchrobo_joy_test/share/catchrobo_joy_test/package.sh'
+[1.455s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/catchrobo_joy_test/share/catchrobo_joy_test/package.bash'
+[1.455s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/catchrobo_joy_test/share/catchrobo_joy_test/package.zsh'
+[1.455s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/catchrobo_joy_test/share/colcon-core/packages/catchrobo_joy_test)
+[1.455s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.456s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.456s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.456s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.468s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.468s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.468s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.468s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.FileNotFound: Failed to connect to socket /run/user/1000/bus: No such file or directory
+[1.468s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.469s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/local_setup.ps1'
+[1.469s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/_local_setup_util_ps1.py'
+[1.470s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/setup.ps1'
+[1.471s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/local_setup.sh'
+[1.472s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/_local_setup_util_sh.py'
+[1.473s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/setup.sh'
+[1.473s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/local_setup.bash'
+[1.474s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/setup.bash'
+[1.475s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/local_setup.zsh'
+[1.475s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/setup.zsh'

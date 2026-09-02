@@ -1,0 +1,25 @@
+[0.399s] Invoking command in '/home/ubuntu/robocon/catchrobo_test/ros2_ws/src/catchrobo_joy_test': PYTHONPATH=/home/ubuntu/robocon/catchrobo_test/ros2_ws/build/catchrobo_joy_test/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/catchrobo_joy_test/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/catchrobo_joy_test build --build-base /home/ubuntu/robocon/catchrobo_test/ros2_ws/build/catchrobo_joy_test/build install --record /home/ubuntu/robocon/catchrobo_test/ros2_ws/build/catchrobo_joy_test/install.log --single-version-externally-managed install_data
+[0.518s] running egg_info
+[0.518s] writing ../../build/catchrobo_joy_test/catchrobo_joy_test.egg-info/PKG-INFO
+[0.518s] writing dependency_links to ../../build/catchrobo_joy_test/catchrobo_joy_test.egg-info/dependency_links.txt
+[0.519s] writing entry points to ../../build/catchrobo_joy_test/catchrobo_joy_test.egg-info/entry_points.txt
+[0.519s] writing requirements to ../../build/catchrobo_joy_test/catchrobo_joy_test.egg-info/requires.txt
+[0.519s] writing top-level names to ../../build/catchrobo_joy_test/catchrobo_joy_test.egg-info/top_level.txt
+[0.520s] reading manifest file '../../build/catchrobo_joy_test/catchrobo_joy_test.egg-info/SOURCES.txt'
+[0.521s] writing manifest file '../../build/catchrobo_joy_test/catchrobo_joy_test.egg-info/SOURCES.txt'
+[0.521s] running build
+[0.521s] running build_py
+[0.522s] copying catchrobo_joy_test/joy_subscriber.py -> /home/ubuntu/robocon/catchrobo_test/ros2_ws/build/catchrobo_joy_test/build/lib/catchrobo_joy_test
+[0.522s] running install
+[0.522s] running install_lib
+[0.523s] copying /home/ubuntu/robocon/catchrobo_test/ros2_ws/build/catchrobo_joy_test/build/lib/catchrobo_joy_test/joy_subscriber.py -> /home/ubuntu/robocon/catchrobo_test/ros2_ws/install/catchrobo_joy_test/lib/python3.10/site-packages/catchrobo_joy_test
+[0.523s] byte-compiling /home/ubuntu/robocon/catchrobo_test/ros2_ws/install/catchrobo_joy_test/lib/python3.10/site-packages/catchrobo_joy_test/joy_subscriber.py to joy_subscriber.cpython-310.pyc
+[0.523s] running install_data
+[0.523s] copying package.xml -> /home/ubuntu/robocon/catchrobo_test/ros2_ws/install/catchrobo_joy_test/share/catchrobo_joy_test
+[0.524s] running install_egg_info
+[0.525s] removing '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/catchrobo_joy_test/lib/python3.10/site-packages/catchrobo_joy_test-0.0.0-py3.10.egg-info' (and everything under it)
+[0.525s] Copying ../../build/catchrobo_joy_test/catchrobo_joy_test.egg-info to /home/ubuntu/robocon/catchrobo_test/ros2_ws/install/catchrobo_joy_test/lib/python3.10/site-packages/catchrobo_joy_test-0.0.0-py3.10.egg-info
+[0.526s] running install_scripts
+[0.537s] Installing joy_sub_test script to /home/ubuntu/robocon/catchrobo_test/ros2_ws/install/catchrobo_joy_test/lib/catchrobo_joy_test
+[0.538s] writing list of installed files to '/home/ubuntu/robocon/catchrobo_test/ros2_ws/build/catchrobo_joy_test/install.log'
+[0.550s] Invoked command in '/home/ubuntu/robocon/catchrobo_test/ros2_ws/src/catchrobo_joy_test' returned '0': PYTHONPATH=/home/ubuntu/robocon/catchrobo_test/ros2_ws/build/catchrobo_joy_test/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/catchrobo_joy_test/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/catchrobo_joy_test build --build-base /home/ubuntu/robocon/catchrobo_test/ros2_ws/build/catchrobo_joy_test/build install --record /home/ubuntu/robocon/catchrobo_test/ros2_ws/build/catchrobo_joy_test/install.log --single-version-externally-managed install_data

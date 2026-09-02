@@ -1,0 +1,3 @@
+[console_scripts]
+single_dxl_test = catchrobo_single_dxl_test.single_dxl_control:main
+

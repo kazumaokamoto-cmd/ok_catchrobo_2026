@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../../build/2dyna2con/2dyna2con.egg-info/PKG-INFO
+../../build/2dyna2con/2dyna2con.egg-info/SOURCES.txt
+../../build/2dyna2con/2dyna2con.egg-info/dependency_links.txt
+../../build/2dyna2con/2dyna2con.egg-info/entry_points.txt
+../../build/2dyna2con/2dyna2con.egg-info/requires.txt
+../../build/2dyna2con/2dyna2con.egg-info/top_level.txt
+../../build/2dyna2con/2dyna2con.egg-info/zip-safe
+2dyna2con/__init__.py
+2dyna2con/main.py
+resource/2dyna2con
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

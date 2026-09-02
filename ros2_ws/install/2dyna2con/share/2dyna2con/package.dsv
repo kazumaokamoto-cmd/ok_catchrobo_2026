@@ -1,0 +1,6 @@
+source;share/2dyna2con/hook/pythonpath.ps1
+source;share/2dyna2con/hook/pythonpath.dsv
+source;share/2dyna2con/hook/pythonpath.sh
+source;share/2dyna2con/hook/ament_prefix_path.ps1
+source;share/2dyna2con/hook/ament_prefix_path.dsv
+source;share/2dyna2con/hook/ament_prefix_path.sh

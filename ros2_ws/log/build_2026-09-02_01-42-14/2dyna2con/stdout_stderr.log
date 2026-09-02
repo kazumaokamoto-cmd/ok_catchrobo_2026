@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/2dyna2con/2dyna2con.egg-info
+writing ../../build/2dyna2con/2dyna2con.egg-info/PKG-INFO
+writing dependency_links to ../../build/2dyna2con/2dyna2con.egg-info/dependency_links.txt
+writing entry points to ../../build/2dyna2con/2dyna2con.egg-info/entry_points.txt
+writing requirements to ../../build/2dyna2con/2dyna2con.egg-info/requires.txt
+writing top-level names to ../../build/2dyna2con/2dyna2con.egg-info/top_level.txt
+writing manifest file '../../build/2dyna2con/2dyna2con.egg-info/SOURCES.txt'
+reading manifest file '../../build/2dyna2con/2dyna2con.egg-info/SOURCES.txt'
+writing manifest file '../../build/2dyna2con/2dyna2con.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ubuntu/robocon/catchrobo_test/ros2_ws/build/2dyna2con/build
+creating /home/ubuntu/robocon/catchrobo_test/ros2_ws/build/2dyna2con/build/lib
+creating /home/ubuntu/robocon/catchrobo_test/ros2_ws/build/2dyna2con/build/lib/2dyna2con
+copying 2dyna2con/main.py -> /home/ubuntu/robocon/catchrobo_test/ros2_ws/build/2dyna2con/build/lib/2dyna2con
+copying 2dyna2con/__init__.py -> /home/ubuntu/robocon/catchrobo_test/ros2_ws/build/2dyna2con/build/lib/2dyna2con
+running install
+running install_lib
+creating /home/ubuntu/robocon/catchrobo_test/ros2_ws/install/2dyna2con/lib/python3.10/site-packages/2dyna2con
+copying /home/ubuntu/robocon/catchrobo_test/ros2_ws/build/2dyna2con/build/lib/2dyna2con/main.py -> /home/ubuntu/robocon/catchrobo_test/ros2_ws/install/2dyna2con/lib/python3.10/site-packages/2dyna2con
+copying /home/ubuntu/robocon/catchrobo_test/ros2_ws/build/2dyna2con/build/lib/2dyna2con/__init__.py -> /home/ubuntu/robocon/catchrobo_test/ros2_ws/install/2dyna2con/lib/python3.10/site-packages/2dyna2con
+byte-compiling /home/ubuntu/robocon/catchrobo_test/ros2_ws/install/2dyna2con/lib/python3.10/site-packages/2dyna2con/main.py to main.cpython-310.pyc
+byte-compiling /home/ubuntu/robocon/catchrobo_test/ros2_ws/install/2dyna2con/lib/python3.10/site-packages/2dyna2con/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/ubuntu/robocon/catchrobo_test/ros2_ws/install/2dyna2con/share/ament_index
+creating /home/ubuntu/robocon/catchrobo_test/ros2_ws/install/2dyna2con/share/ament_index/resource_index
+creating /home/ubuntu/robocon/catchrobo_test/ros2_ws/install/2dyna2con/share/ament_index/resource_index/packages
+copying resource/2dyna2con -> /home/ubuntu/robocon/catchrobo_test/ros2_ws/install/2dyna2con/share/ament_index/resource_index/packages
+copying package.xml -> /home/ubuntu/robocon/catchrobo_test/ros2_ws/install/2dyna2con/share/2dyna2con
+running install_egg_info
+Copying ../../build/2dyna2con/2dyna2con.egg-info to /home/ubuntu/robocon/catchrobo_test/ros2_ws/install/2dyna2con/lib/python3.10/site-packages/2dyna2con-0.0.0-py3.10.egg-info
+running install_scripts
+Installing 2dyna2con script to /home/ubuntu/robocon/catchrobo_test/ros2_ws/install/2dyna2con/lib/2dyna2con
+writing list of installed files to '/home/ubuntu/robocon/catchrobo_test/ros2_ws/build/2dyna2con/install.log'

@@ -1,0 +1,37 @@
+[0.686s] Invoking command in '/home/ubuntu/robocon/catchrobo_test/ros2_ws/src/2dyna2con': PYTHONPATH=/home/ubuntu/robocon/catchrobo_test/ros2_ws/build/2dyna2con/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/2dyna2con/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/2dyna2con build --build-base /home/ubuntu/robocon/catchrobo_test/ros2_ws/build/2dyna2con/build install --record /home/ubuntu/robocon/catchrobo_test/ros2_ws/build/2dyna2con/install.log --single-version-externally-managed install_data
+[0.805s] running egg_info
+[0.805s] creating ../../build/2dyna2con/2dyna2con.egg-info
+[0.805s] writing ../../build/2dyna2con/2dyna2con.egg-info/PKG-INFO
+[0.806s] writing dependency_links to ../../build/2dyna2con/2dyna2con.egg-info/dependency_links.txt
+[0.806s] writing entry points to ../../build/2dyna2con/2dyna2con.egg-info/entry_points.txt
+[0.806s] writing requirements to ../../build/2dyna2con/2dyna2con.egg-info/requires.txt
+[0.807s] writing top-level names to ../../build/2dyna2con/2dyna2con.egg-info/top_level.txt
+[0.807s] writing manifest file '../../build/2dyna2con/2dyna2con.egg-info/SOURCES.txt'
+[0.809s] reading manifest file '../../build/2dyna2con/2dyna2con.egg-info/SOURCES.txt'
+[0.809s] writing manifest file '../../build/2dyna2con/2dyna2con.egg-info/SOURCES.txt'
+[0.809s] running build
+[0.809s] running build_py
+[0.809s] creating /home/ubuntu/robocon/catchrobo_test/ros2_ws/build/2dyna2con/build
+[0.810s] creating /home/ubuntu/robocon/catchrobo_test/ros2_ws/build/2dyna2con/build/lib
+[0.810s] creating /home/ubuntu/robocon/catchrobo_test/ros2_ws/build/2dyna2con/build/lib/2dyna2con
+[0.810s] copying 2dyna2con/main.py -> /home/ubuntu/robocon/catchrobo_test/ros2_ws/build/2dyna2con/build/lib/2dyna2con
+[0.810s] copying 2dyna2con/__init__.py -> /home/ubuntu/robocon/catchrobo_test/ros2_ws/build/2dyna2con/build/lib/2dyna2con
+[0.810s] running install
+[0.810s] running install_lib
+[0.810s] creating /home/ubuntu/robocon/catchrobo_test/ros2_ws/install/2dyna2con/lib/python3.10/site-packages/2dyna2con
+[0.811s] copying /home/ubuntu/robocon/catchrobo_test/ros2_ws/build/2dyna2con/build/lib/2dyna2con/main.py -> /home/ubuntu/robocon/catchrobo_test/ros2_ws/install/2dyna2con/lib/python3.10/site-packages/2dyna2con
+[0.811s] copying /home/ubuntu/robocon/catchrobo_test/ros2_ws/build/2dyna2con/build/lib/2dyna2con/__init__.py -> /home/ubuntu/robocon/catchrobo_test/ros2_ws/install/2dyna2con/lib/python3.10/site-packages/2dyna2con
+[0.812s] byte-compiling /home/ubuntu/robocon/catchrobo_test/ros2_ws/install/2dyna2con/lib/python3.10/site-packages/2dyna2con/main.py to main.cpython-310.pyc
+[0.813s] byte-compiling /home/ubuntu/robocon/catchrobo_test/ros2_ws/install/2dyna2con/lib/python3.10/site-packages/2dyna2con/__init__.py to __init__.cpython-310.pyc
+[0.813s] running install_data
+[0.813s] creating /home/ubuntu/robocon/catchrobo_test/ros2_ws/install/2dyna2con/share/ament_index
+[0.813s] creating /home/ubuntu/robocon/catchrobo_test/ros2_ws/install/2dyna2con/share/ament_index/resource_index
+[0.814s] creating /home/ubuntu/robocon/catchrobo_test/ros2_ws/install/2dyna2con/share/ament_index/resource_index/packages
+[0.814s] copying resource/2dyna2con -> /home/ubuntu/robocon/catchrobo_test/ros2_ws/install/2dyna2con/share/ament_index/resource_index/packages
+[0.814s] copying package.xml -> /home/ubuntu/robocon/catchrobo_test/ros2_ws/install/2dyna2con/share/2dyna2con
+[0.814s] running install_egg_info
+[0.816s] Copying ../../build/2dyna2con/2dyna2con.egg-info to /home/ubuntu/robocon/catchrobo_test/ros2_ws/install/2dyna2con/lib/python3.10/site-packages/2dyna2con-0.0.0-py3.10.egg-info
+[0.817s] running install_scripts
+[0.828s] Installing 2dyna2con script to /home/ubuntu/robocon/catchrobo_test/ros2_ws/install/2dyna2con/lib/2dyna2con
+[0.828s] writing list of installed files to '/home/ubuntu/robocon/catchrobo_test/ros2_ws/build/2dyna2con/install.log'
+[0.860s] Invoked command in '/home/ubuntu/robocon/catchrobo_test/ros2_ws/src/2dyna2con' returned '0': PYTHONPATH=/home/ubuntu/robocon/catchrobo_test/ros2_ws/build/2dyna2con/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/2dyna2con/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/2dyna2con build --build-base /home/ubuntu/robocon/catchrobo_test/ros2_ws/build/2dyna2con/build install --record /home/ubuntu/robocon/catchrobo_test/ros2_ws/build/2dyna2con/install.log --single-version-externally-managed install_data

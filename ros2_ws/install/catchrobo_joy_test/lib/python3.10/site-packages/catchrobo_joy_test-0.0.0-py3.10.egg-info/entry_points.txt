@@ -1,0 +1,3 @@
+[console_scripts]
+joy_sub_test = catchrobo_joy_test.joy_subscriber:main
+

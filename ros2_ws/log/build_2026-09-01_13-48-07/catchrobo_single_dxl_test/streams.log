@@ -1,0 +1,24 @@
+[1.364s] Invoking command in '/home/ubuntu/robocon/catchrobo_test/ros2_ws/src/catchrobo_single_dxl_test': PYTHONPATH=/home/ubuntu/robocon/catchrobo_test/ros2_ws/build/catchrobo_single_dxl_test/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/catchrobo_single_dxl_test/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/catchrobo_single_dxl_test build --build-base /home/ubuntu/robocon/catchrobo_test/ros2_ws/build/catchrobo_single_dxl_test/build install --record /home/ubuntu/robocon/catchrobo_test/ros2_ws/build/catchrobo_single_dxl_test/install.log --single-version-externally-managed install_data
+[1.642s] running egg_info
+[1.643s] writing ../../build/catchrobo_single_dxl_test/catchrobo_single_dxl_test.egg-info/PKG-INFO
+[1.644s] writing dependency_links to ../../build/catchrobo_single_dxl_test/catchrobo_single_dxl_test.egg-info/dependency_links.txt
+[1.644s] writing entry points to ../../build/catchrobo_single_dxl_test/catchrobo_single_dxl_test.egg-info/entry_points.txt
+[1.644s] writing requirements to ../../build/catchrobo_single_dxl_test/catchrobo_single_dxl_test.egg-info/requires.txt
+[1.645s] writing top-level names to ../../build/catchrobo_single_dxl_test/catchrobo_single_dxl_test.egg-info/top_level.txt
+[1.680s] reading manifest file '../../build/catchrobo_single_dxl_test/catchrobo_single_dxl_test.egg-info/SOURCES.txt'
+[1.682s] writing manifest file '../../build/catchrobo_single_dxl_test/catchrobo_single_dxl_test.egg-info/SOURCES.txt'
+[1.682s] running build
+[1.682s] running build_py
+[1.684s] copying catchrobo_single_dxl_test/single_dxl_control.py -> /home/ubuntu/robocon/catchrobo_test/ros2_ws/build/catchrobo_single_dxl_test/build/lib/catchrobo_single_dxl_test
+[1.684s] running install
+[1.684s] running install_lib
+[1.685s] copying /home/ubuntu/robocon/catchrobo_test/ros2_ws/build/catchrobo_single_dxl_test/build/lib/catchrobo_single_dxl_test/single_dxl_control.py -> /home/ubuntu/robocon/catchrobo_test/ros2_ws/install/catchrobo_single_dxl_test/lib/python3.10/site-packages/catchrobo_single_dxl_test
+[1.685s] byte-compiling /home/ubuntu/robocon/catchrobo_test/ros2_ws/install/catchrobo_single_dxl_test/lib/python3.10/site-packages/catchrobo_single_dxl_test/single_dxl_control.py to single_dxl_control.cpython-310.pyc
+[1.686s] running install_data
+[1.686s] running install_egg_info
+[1.689s] removing '/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/catchrobo_single_dxl_test/lib/python3.10/site-packages/catchrobo_single_dxl_test-0.0.0-py3.10.egg-info' (and everything under it)
+[1.691s] Copying ../../build/catchrobo_single_dxl_test/catchrobo_single_dxl_test.egg-info to /home/ubuntu/robocon/catchrobo_test/ros2_ws/install/catchrobo_single_dxl_test/lib/python3.10/site-packages/catchrobo_single_dxl_test-0.0.0-py3.10.egg-info
+[1.693s] running install_scripts
+[1.717s] Installing single_dxl_test script to /home/ubuntu/robocon/catchrobo_test/ros2_ws/install/catchrobo_single_dxl_test/lib/catchrobo_single_dxl_test
+[1.718s] writing list of installed files to '/home/ubuntu/robocon/catchrobo_test/ros2_ws/build/catchrobo_single_dxl_test/install.log'
+[1.804s] Invoked command in '/home/ubuntu/robocon/catchrobo_test/ros2_ws/src/catchrobo_single_dxl_test' returned '0': PYTHONPATH=/home/ubuntu/robocon/catchrobo_test/ros2_ws/build/catchrobo_single_dxl_test/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/robocon/catchrobo_test/ros2_ws/install/catchrobo_single_dxl_test/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/catchrobo_single_dxl_test build --build-base /home/ubuntu/robocon/catchrobo_test/ros2_ws/build/catchrobo_single_dxl_test/build install --record /home/ubuntu/robocon/catchrobo_test/ros2_ws/build/catchrobo_single_dxl_test/install.log --single-version-externally-managed install_data
