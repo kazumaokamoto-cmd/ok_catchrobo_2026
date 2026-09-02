@@ -1,14 +1,14 @@
 ### パッケージについて
 
-catchrobo_joy_test
+- catchrobo_joy_test
 
 /joyを受信したときのcallbackのテスト
 
-catchrobo_single_dxl_test
+- catchrobo_single_dxl_test
 
 一つのdynamixelを制御する
 
-airsilinder_test
+- airsilinder_test
 
 エアシリンダーの制御をする
 
@@ -16,7 +16,7 @@ airsilinder_test
 
 ボタンを押すたびにオンオフが切り替わってほしいが、たまにオフ状態でボタンを１回押したときにオン→オフになって状態が変わらないときがある。オン状態でも同様
 
-2dyna2con
+- 2dyna2con
 
 ２つのdynamixelを２つのコントローラーでそれぞれ制御する
 
@@ -28,10 +28,11 @@ airsilinder_test
 
 赤色のコントローラー（device_idは1、js2）から操作したとき、2つのdynamixelが動いてしまう
 
-### テスト
+### これからのテストについて
 - 2つのdynamixelをそれぞれのコントローラーから制御できるかテスト
 - ガタガタせずに動くかテスト
 - エアシリンダーの制御
+- launchファイルから立ち上げる
 
 
 
@@ -44,8 +45,7 @@ airsilinder_test
 
 
 
-
-### 設計書
+## 以降は設計書
 
 ## 1. システム概要
 本システムは、キャチロボ出場機体（2機体・各3軸・計6軸のDynamixel）を、PS4コントローラーからの入力（ROS 2 `/joy` トピック）に基づき速度制御で駆動するためのリアルタイム制御システムである。
