@@ -26,6 +26,7 @@ AXIS_RIGHT_STICK_Y = 4  # 右スティック Y軸: Y2軸移動
 AXIS_L2 = 2             # L2トリガー: 微修正モード
 AXIS_R2 = 5             # R2トリガー: 微修正モード
 
+BUTTON_CROSS = 0        # ×ボタン: 真空ポンプ トグル制御
 BUTTON_CIRCLE = 1       # ○ボタン: エアシリンダー トグル制御
 BUTTON_OPTIONS = 9      # OPTIONSボタン: 緊急停止
 
@@ -33,28 +34,30 @@ BUTTON_OPTIONS = 9      # OPTIONSボタン: 緊急停止
 robot_a = {
     'name': 'robot_a',
     'joy_topic': '/joy_a',
-    'cylinder_topic': '/cylinder_state_a',
     'dxl_ids': [1, 2, 3],      # [X軸, Y1軸, Y2軸]
     'invert': [1, -1, 1],      # 回転方向反転フラグ
     'target_vel': [0, 0, 0],   # [X軸速度, Y1軸速度, Y2軸速度]
     'slow_mode': False,        # 微修正モード (L2/R2)
     'emergency_stop': False,   # 緊急停止状態
     'cylinder_state': False,   # エアシリンダー状態 (False: OFF, True: ON)
+    'pump_state': False,       # 真空ポンプ状態 (False: OFF, True: ON)
     'prev_button_circle': 0,   # ○ボタンの立ち上がり検出用
+    'prev_button_cross': 0,    # ×ボタンの立ち上がり検出用
     'joy_connected': False     # Joyトピック受信確認フラグ
 }
 
 robot_b = {
     'name': 'robot_b',
     'joy_topic': '/joy_b',
-    'cylinder_topic': '/cylinder_state_b',
     'dxl_ids': [4, 5, 6],      # [X軸, Y1軸, Y2軸]
     'invert': [1, -1, 1],      # 回転方向反転フラグ
     'target_vel': [0, 0, 0],   # [X軸速度, Y1軸速度, Y2軸速度]
     'slow_mode': False,
     'emergency_stop': False,
     'cylinder_state': False,
+    'pump_state': False,
     'prev_button_circle': 0,
+    'prev_button_cross': 0,
     'joy_connected': False
 }
 
@@ -66,8 +69,8 @@ def apply_deadzone(val, threshold=0.05):
     return val
 
 
-def update_robot_velocity(robot_dict, joy_msg, logger, cylinder_pub):
-    """受信したコントローラー入力から目標速度とシリンダー状態を更新"""
+def update_robot_velocity(robot_dict, joy_msg, logger):
+    """受信したコントローラー入力から目標速度、シリンダー、ポンプ状態を更新"""
     # 初回受信時のログ出力
     if not robot_dict['joy_connected']:
         logger.info(f"SUCCESS: Signal received on [{robot_dict['joy_topic']}] for [{robot_dict['name']}]")
@@ -80,16 +83,40 @@ def update_robot_velocity(robot_dict, joy_msg, logger, cylinder_pub):
         if current_circle == 1 and robot_dict['prev_button_circle'] == 0:
             robot_dict['cylinder_state'] = not robot_dict['cylinder_state']
             state_str = "ON" if robot_dict['cylinder_state'] else "OFF"
-            logger.info(f"[{robot_dict['name']}] Air Cylinder Toggled -> {state_str} (Topic: {robot_dict['cylinder_topic']})")
-            
-            # Boolメッセージの配信
-            cmd_msg = Bool()
-            cmd_msg.data = robot_dict['cylinder_state']
-            cylinder_pub.publish(cmd_msg)
+            logger.info(f"[{robot_dict['name']}] Air Cylinder Toggled -> {state_str}")
+
+            # =========================================================================
+            # TODO: ここに自作ライブラリのエアシリンダーON/OFF処理を入れてください
+            # 例:
+            # if robot_dict['cylinder_state']:
+            #     your_lib.cylinder_on(robot_dict['name'])
+            # else:
+            #     your_lib.cylinder_off(robot_dict['name'])
+            # =========================================================================
 
         robot_dict['prev_button_circle'] = current_circle
 
-    # --- 2. 緊急停止チェック (OPTIONSボタン) ---
+    # --- 2. 真空ポンプ トグル制御 (×ボタン) ---
+    if len(joy_msg.buttons) > BUTTON_CROSS:
+        current_cross = joy_msg.buttons[BUTTON_CROSS]
+        # 立ち上がりエッジ検出 (前回0で今回1)
+        if current_cross == 1 and robot_dict['prev_button_cross'] == 0:
+            robot_dict['pump_state'] = not robot_dict['pump_state']
+            state_str = "ON" if robot_dict['pump_state'] else "OFF"
+            logger.info(f"[{robot_dict['name']}] Vacuum Pump Toggled -> {state_str}")
+
+            # =========================================================================
+            # TODO: ここに自作ライブラリの真空ポンプON/OFF処理を入れてください
+            # 例:
+            # if robot_dict['pump_state']:
+            #     your_lib.pump_on(robot_dict['name'])
+            # else:
+            #     your_lib.pump_off(robot_dict['name'])
+            # =========================================================================
+
+        robot_dict['prev_button_cross'] = current_cross
+
+    # --- 3. 緊急停止チェック (OPTIONSボタン) ---
     if len(joy_msg.buttons) > BUTTON_OPTIONS:
         if joy_msg.buttons[BUTTON_OPTIONS] == 1:
             if not robot_dict['emergency_stop']:
@@ -100,7 +127,7 @@ def update_robot_velocity(robot_dict, joy_msg, logger, cylinder_pub):
         robot_dict['target_vel'] = [0, 0, 0]
         return
 
-    # --- 3. 微修正モード判定 (L2/R2トリガー) ---
+    # --- 4. 微修正モード判定 (L2/R2トリガー) ---
     prev_slow = robot_dict['slow_mode']
     robot_dict['slow_mode'] = False
     if len(joy_msg.axes) > max(AXIS_L2, AXIS_R2):
@@ -112,7 +139,7 @@ def update_robot_velocity(robot_dict, joy_msg, logger, cylinder_pub):
         mode_str = "SLOW (50%)" if robot_dict['slow_mode'] else "NORMAL (100%)"
         logger.info(f"[{robot_dict['name']}] Speed Mode -> {mode_str}")
 
-    # --- 4. 3軸(X, Y1, Y2)の目標速度計算 ---
+    # --- 5. 3軸(X, Y1, Y2)の目標速度計算 ---
     speed_limit = MAX_VELOCITY * 0.5 if robot_dict['slow_mode'] else MAX_VELOCITY
 
     # X軸 (左スティック X)
@@ -147,23 +174,19 @@ class DualRobotController(Node):
         self.sub_b = self.create_subscription(
             Joy, robot_b['joy_topic'], self.joy_b_callback, 10)
 
-        # Publishers (エアシリンダー制御用)
-        self.pub_cylinder_a = self.create_publisher(Bool, robot_a['cylinder_topic'], 10)
-        self.pub_cylinder_b = self.create_publisher(Bool, robot_b['cylinder_topic'], 10)
-
         # 送信タイマー (20Hz / 0.05秒周期)
         self.timer = self.create_timer(0.05, self.timer_callback)
         
         # 接続監視タイマー (3秒周期)
         self.health_check_timer = self.create_timer(3.0, self.check_joy_health)
 
-        self.get_logger().info("=== Dual Robot Controller Initialized (6 Dynamixels & 2 Air Cylinders) ===")
+        self.get_logger().info("=== Dual Robot Controller Initialized (6 Dynamixels) ===")
 
     def joy_a_callback(self, msg):
-        update_robot_velocity(robot_a, msg, self.get_logger(), self.pub_cylinder_a)
+        update_robot_velocity(robot_a, msg, self.get_logger())
 
     def joy_b_callback(self, msg):
-        update_robot_velocity(robot_b, msg, self.get_logger(), self.pub_cylinder_b)
+        update_robot_velocity(robot_b, msg, self.get_logger())
 
     def check_joy_health(self):
         """コントローラーからのトピック受信状況を監視"""
